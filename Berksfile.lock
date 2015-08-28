@@ -1,0 +1,51 @@
+DEPENDENCIES
+  apt
+  database (~> 3.0.0)
+  locale
+  mysql (~> 6.0.0)
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: f2b53292e810dd2b43f6121f9958f5f29979dcb1
+    branch: v0.7.2
+  ruby_build (~> 0.8.0)
+
+GRAPH
+  apt (2.6.1)
+  build-essential (2.1.3)
+  chef-sugar (2.5.0)
+  database (3.0.3)
+    mysql2_chef_gem (~> 1.0)
+    postgresql (>= 1.0.0)
+  java (1.29.0)
+  locale (1.0.2)
+  mariadb (0.2.11)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  mysql (6.0.10)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  mysql2_chef_gem (1.0.1)
+    build-essential (>= 0.0.0)
+    mariadb (>= 0.0.0)
+    mysql (>= 0.0.0)
+  openssl (2.0.2)
+    chef-sugar (>= 0.0.0)
+  postgresql (3.4.14)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  rbac (1.0.2)
+  rbenv (0.7.2)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  resource-control (0.1.1)
+  ruby_build (0.8.0)
+  smf (2.2.1)
+    rbac (>= 1.0.1)
+    resource-control (>= 0.0.0)
+  yum (3.5.2)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.12)
+    yum (>= 3.0)

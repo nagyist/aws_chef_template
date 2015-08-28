@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "role[dev]"
+  ],
+  "automatic": {
+    "ipaddress": "ubuntu"
+  },
+  "locale": {
+    "lang": "ja_JP.UTF-8",
+    "lc_all": "ja_JP.UTF-8"
+  }
+}

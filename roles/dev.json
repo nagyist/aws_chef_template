@@ -1,0 +1,33 @@
+{
+  "name": "dev",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "locale": {
+      "lang": "ja_JP.UTF-8",
+      "lc_all": "ja_JP.UTF-8"
+    },
+    "rbenv": {
+      "plugins": [
+        {
+          "name": "rbenv-gem-rehash",
+          "git_url": "https://github.com/sstephenson/rbenv-gem-rehash.git",
+          "git_ref": "4d7b92de4"
+        }
+      ],
+      "user_installs": [
+        {
+          "user": "ubuntu",
+          "rubies": ["2.2.2"]
+        }
+      ]
+    }
+  },
+  "run_list": [
+      "apt",
+      "locale",
+      "setupdev",
+      "ruby_build",
+      "rbenv::user"
+  ]
+}
